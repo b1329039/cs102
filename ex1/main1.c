@@ -9,7 +9,7 @@ int main(){
     char redb[4];
     float redc[3];
     
-    fopen("a.bin","wb+");
+    fp=fopen("a.bin","wb+");
     fwrite(a,sizeof(a),1,fp);
     fwrite(b,sizeof(b),1,fp);
     fwrite(c,sizeof(c),1,fp);
@@ -21,14 +21,15 @@ int main(){
     for(int i=0;i<3;i++){
         printf("%d",reda[i]);
     }
+    printf("\n");
     for(int n=0;n<4;n++){
-        printf("%s",redb[n]);
+        printf("%c",redb[n]);
     }
+    printf("\n");
     for(int m=0;m<3;m++){
         printf("%f",redc[m]);
     }
-    
+
     fclose(fp);
     return 0;
 }
-
