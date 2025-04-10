@@ -5,7 +5,7 @@ int nine(int n,int m){
         return 0;
     }
     while(m<=9){
-        printf("%2d*%2d=%2d    ",m,n,n*m);
+        printf("%d*%d=%2d    ",m,n,n*m);
         m++;
     }
     printf("\n");
